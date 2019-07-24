@@ -1,0 +1,16 @@
+{
+  "title": "Abby Jones",
+  "url": "https://abbyjones.dev/",
+  "description": "Writing about my journey as a software developer and sharing helpful resources",
+  "feed": {
+    "subtitle": "Software development articles and resources",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://abbyjones.dev/feed/feed.xml",
+    "id": "https://abbyjones.dev/"
+  },
+  "author": {
+    "name": "Abby Jones",
+    "email": "abbyjonesdev@gmail.com"
+  }
+}
