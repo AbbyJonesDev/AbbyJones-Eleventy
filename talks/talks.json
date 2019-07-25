@@ -1,0 +1,6 @@
+{
+  "tags": [
+    "talks"
+  ],
+  "layout": "layouts/post.njk"
+}

@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+tags:
+  - nav
+navtitle: Talks
+permalink: /talks/
+---
+
+<h1>Talks</h1>
+
+{% set talkslist = collections.talks %}
+{% include "talkslist.njk" %}
