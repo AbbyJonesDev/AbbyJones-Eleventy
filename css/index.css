@@ -7,7 +7,19 @@
   --navy: #17050F;
   --blue: #082840;
   --white: #fff;
+
+  --purple:       #40436B;
+  --purple-dark:  #313352;
+  --purple-light: #6E73B8;
+  --green:        #f7faf6;
+  --teal-dark:    #426278;
+  --background-color:   rgba(212, 234, 206, 0.1);
 }
+
+/* ==================================== */
+/* 1 - GENERAL                          */
+/* ==================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -17,8 +29,22 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: var(--darkgray);
-  background-color: var(--white);
+  background-color: var(--background-color);
 }
+
+h1, h2 {
+  color: var(--purple-dark);
+}
+
+h3 {
+  color: var(--teal-dark);
+}
+
+main h1 {
+  border-bottom: 1px dashed var(--darkgray);
+  padding-bottom: 1rem;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -31,12 +57,8 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
-a[href] {
-  color: var(--blue);
-}
-a[href]:visited {
-  color: var(--navy);
-}
+
+
 main {
   padding: 1rem;
 }
@@ -59,6 +81,26 @@ table th {
   padding-right: 1em;
 }
 
+/* ==================================== */
+/* 2 - LINKS                            */
+/* ==================================== */
+a[href] {
+  color: var(--purple);
+}
+
+a[href]:hover {
+  color: var(--teal-dark);
+}
+
+/** Improve readability of focused elements when they are also in an active/hover state.  */
+a[href]:active,
+a[href]:hover {
+  outline: 0;
+}
+
+/* ==================================== */
+/* 3 - SYNTAX HIGHLIGHTING              */
+/* ==================================== */
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -114,18 +156,34 @@ pre {
   background-color: #902f2f;
 }
 
-/* Header */
+
+/* ==================================== */
+/* 4 - HEADER AND NAV                   */
+/* ==================================== */
+header {
+  background: var(--purple-dark);
+  color: var(--green);
+}
+
 .home {
   padding: 0 1rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
 }
+
+.home a[href] {
+  color: var(--green);  
+}
+
 .home :link:not(:hover) {
   text-decoration: none;
 }
 
-/* Nav */
+.home a[href]:hover {
+  color: var(--white);  
+}
+
 .nav {
   padding: 0;
   list-style: none;
@@ -137,14 +195,23 @@ pre {
   margin-right: 1em;
 }
 .nav-item a[href]:not(:hover) {
+  color: var(--green);
   text-decoration: none;
 }
+
+.nav-item a[href]:hover {
+  color: var(--white);
+}
+
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
 }
 
-/* Posts list */
+
+/* ==================================== */
+/* 5 - POSTS LIST                       */
+/* ==================================== */
 .postlist {
   list-style: none;
   padding: 0;
@@ -180,15 +247,17 @@ pre {
 }
 
 
-/* Tags */
+/* ==================================== */
+/* 6 - TAG TAGS                         */
+/* ==================================== */
 .tag {
   display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
   font-size: 0.625em; /* 10px /16 */
-  padding: 2px 4px;
+  padding: 4px 8px;
   margin-left: 0.8em; /* 8px /10 */
-  background-color: var(--red);
+  background-color: var(--teal-dark);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
@@ -198,16 +267,9 @@ a[href].tag:visited {
   color: #fff;
 }
 
-/* Warning */
-.warning {
-  background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
-}
-.warning ol:only-child {
-  margin: 0;
-}
-
-/* Direct Links / Markdown Headers */
+/* ==================================== */
+/* 7 - DIRECT LINKS / MD HEADERS        */
+/* ==================================== */
 .direct-link {
   font-family: sans-serif;
   text-decoration: none;
@@ -222,5 +284,5 @@ a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
-  color: #aaa;
+  color: var(--purple);
 }
