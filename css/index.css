@@ -34,11 +34,14 @@ body {
   font-family: sans-serif;
   color: var(--darkgray);
   background-color: var(--background-color);
+  background-image: url("../img/Background.png");
+  background-attachment: fixed;
 }
 
 .wrapper {
   min-height: 100%;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .internal-content, main {
@@ -49,6 +52,8 @@ body {
 main {
   background: var(--white);
   padding: 1rem 1rem var(--footer-spacing) 1rem;
+  min-height: 100vh;
+  z-index: -1;
 }
 
 h1, h2 {
