@@ -1,7 +1,7 @@
 ---
 title:  "Starting a New Website"
 date:   2016-02-01
-summary: ""
+summary: "An overview of different ways small business owners and nonprofit groups can get started with creating a website."
 tags: 
   - ''
 ---

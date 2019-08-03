@@ -2,5 +2,5 @@
   "tags": [
     "talks"
   ],
-  "layout": "layouts/post.njk"
+  "layout": "layouts/talk.njk"
 }

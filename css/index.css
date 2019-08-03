@@ -30,6 +30,7 @@ body {
   font-family: sans-serif;
   color: var(--darkgray);
   background-color: var(--background-color);
+  min-height: 100vh;
 }
 
 h1, h2 {
@@ -85,11 +86,11 @@ table th {
 /* 2 - LINKS                            */
 /* ==================================== */
 a[href] {
-  color: var(--purple);
+  color: var(--teal-dark);
 }
 
 a[href]:hover {
-  color: var(--teal-dark);
+  color: var(--purple);
 }
 
 /** Improve readability of focused elements when they are also in an active/hover state.  */
@@ -212,14 +213,21 @@ header {
 /* ==================================== */
 /* 5 - POSTS LIST                       */
 /* ==================================== */
-.postlist {
+.postlist,
+.talklist,
+.resourcelist {
   list-style: none;
   padding: 0;
 }
-.postlist-item {
+.postlist-item,
+.talkist-item,
+.resourcelist-item {
   counter-increment: start-from -1;
 }
-.postlist-item:before {
+.postlist-item:before,
+.talklist-item:before,
+.resourcelist-item:before
+{
   display: inline-block;
   pointer-events: none;
   content: "" counter(start-from, decimal-leading-zero) ". ";
@@ -227,21 +235,33 @@ header {
   text-align: right;
 }
 .postlist-date,
-.postlist-item:before {
+.postlist-item:before,
+.talklist-date,
+.talklist-item:before,
+.resourcelist-date,
+.resourcelist-item:before {
   font-size: 0.8125em; /* 13px /16 */
   color: var(--darkgray);
 }
-.postlist-date {
+.postlist-date,
+.talkist-date,
+.resourcelist-date {
   word-spacing: -0.5px;
 }
-.postlist-link {
+.postlist-link,
+.talklist-link,
+.resourcelist-link {
   display: inline-block;
   padding: 0.25em 0.1875em; /* 4px 3px /16 */
 }
-.postlist-item-active .postlist-link {
+.postlist-item-active .postlist-link,
+.talkist-item-active .talklist-link
+.resourcelist-item-active .resourcelist-link {
   font-weight: bold;
 }
-.tmpl-home .postlist-link {
+.tmpl-home .postlist-link,
+.tmpl-home .talklist-link,
+.tmpl-home .resourcelist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
 }
@@ -265,6 +285,10 @@ header {
 a[href].tag,
 a[href].tag:visited {
   color: #fff;
+}
+
+.tag:hover {
+  background-color: var(--purple);
 }
 
 /* ==================================== */

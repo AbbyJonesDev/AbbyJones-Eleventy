@@ -1,0 +1,14 @@
+<ol reversed class="resourcelist" style="counter-reset: start-from {{ resourceslist.length + 1 }}">
+{% for resource in resourceslist | reverse %}
+  <li class="resourcelist-item{% if resource.url == url %} resourcelist-item-active{% endif %}">
+    <a href="{{ resource.url | url }}" class="resourcelist-link">{% if resource.data.title %}{{ resource.data.title }}{% else %}<code>{{ resource.url }}</code>{% endif %}</a>
+    <time class="resourcelist-date" datetime="{{ resource.date | htmlDateString }}">{{ resource.date | readableDate }}</time>
+    {% for tag in resource.data.tags %}
+      {%- if tag != "resources" -%}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+  </li>
+{% endfor %}
+</ol>
