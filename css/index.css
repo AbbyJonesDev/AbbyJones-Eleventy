@@ -13,7 +13,10 @@
   --purple-light: #6E73B8;
   --green:        #f7faf6;
   --teal-dark:    #426278;
-  --background-color:   rgba(212, 234, 206, 0.1);
+  --background-color: var(--green);  /* rgba(212, 234, 206, 0.1); */
+
+  --footer-height: 2rem;
+  --footer-spacing: 3rem;   /* footer height + 1 rem of padding */
 }
 
 /* ==================================== */
@@ -27,10 +30,25 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-family: sans-serif;
   color: var(--darkgray);
   background-color: var(--background-color);
-  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.internal-content, main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main {
+  background: var(--white);
+  padding: 1rem 1rem var(--footer-spacing) 1rem;
 }
 
 h1, h2 {
@@ -52,17 +70,13 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
+  max-width: 50em; /* Highest recommended length for readability */
 }
 p,
 .tmpl-post li {
   line-height: 1.45;
 }
 
-
-main {
-  padding: 1rem;
-}
 main :first-child {
   margin-top: 0;
 }
@@ -159,11 +173,19 @@ pre {
 
 
 /* ==================================== */
-/* 4 - HEADER AND NAV                   */
+/* 4 - HEADER, NAV AND FOOTER           */
 /* ==================================== */
-header {
+header, footer {
   background: var(--purple-dark);
   color: var(--green);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--footer-height);
 }
 
 .home {
