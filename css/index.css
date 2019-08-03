@@ -198,11 +198,13 @@ footer {
   padding: 0 1rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
+  font-size: 1.5em; /* 16px /16 */
+  font-weight: 700;
 }
 
 .home a[href] {
-  color: var(--green);  
+  color: var(--green);
+  font-size: 1.5rem;
 }
 
 .home :link:not(:hover) {
@@ -216,9 +218,22 @@ footer {
 .nav, .social-media {
   padding: 0;
   list-style: none;
+}
+
+.nav {
+  float: right;
+  margin: 1.25em 1em;
+}
+
+.social-media {
   float: left;
   margin-left: 1em;
 }
+
+.nav-item a[href] {
+  font-size: 1.25rem;
+}
+
 .nav-item, .social-media-item {
   display: inline-block;
   margin-right: 1em;
