@@ -14,9 +14,10 @@
   --green:        #f7faf6;
   --teal-dark:    #426278;
   --background-color: var(--green);  /* rgba(212, 234, 206, 0.1); */
+  --background-mask-green: rgba(255, 255, 255, 0.7);
 
-  --footer-height: 2rem;
-  --footer-spacing: 3rem;   /* footer height + 1 rem of padding */
+  --footer-height: 4rem;
+  --footer-spacing: 5rem;   /* footer height + 1 rem of padding */
 }
 
 /* ==================================== */
@@ -41,7 +42,7 @@ body {
 .wrapper {
   min-height: 100%;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--background-mask-green);
 }
 
 .internal-content, main {
@@ -212,28 +213,36 @@ footer {
   color: var(--white);  
 }
 
-.nav {
+.nav, .social-media {
   padding: 0;
   list-style: none;
   float: left;
   margin-left: 1em;
 }
-.nav-item {
+.nav-item, .social-media-item {
   display: inline-block;
   margin-right: 1em;
 }
-.nav-item a[href]:not(:hover) {
+.nav-item a[href]:not(:hover),
+.social-media-item a[href]:not(hover) {
   color: var(--green);
   text-decoration: none;
 }
 
-.nav-item a[href]:hover {
+.nav-item a[href]:hover,
+.social-media-item a[href]:hover {
   color: var(--white);
+  text-decoration: underline;
 }
 
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
+}
+
+footer ion-icon {
+  font-size: 1.2rem;
+  margin-right: .5rem;
 }
 
 
