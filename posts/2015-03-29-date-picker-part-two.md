@@ -1,7 +1,7 @@
 ---
 title:  "Date Picker Part Two"
 date:   2015-03-29
-summary: ""
+summary: "Upon further examination, my wonderful date picker solution didn't work out quite as expected. It seemed to work fine in some cases, but other times the record would fail to save. This only happened in browsers that used the jQuery UI Date Picker. (Things worked fine on Chrome, which has a native date picker...)"
 tags: 
   - JavaScript
   - Rails

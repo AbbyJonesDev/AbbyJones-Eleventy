@@ -1,7 +1,7 @@
 ---
 title:  "Implementing Binary Search in JavaScript"
 date:   2014-12-06
-summary: ""
+summary: "This morning I worked through the binary search tutorial in the Algorithms class on Khan Academy. The concepts were familiar from when I took MIT's Introduction to Computer Science and Programming on EdX, but this time I learned to implement the algorithm in JavaScript rather than Python..."
 tags: 
   - JavaScript
   - Algorithms

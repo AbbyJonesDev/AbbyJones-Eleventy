@@ -1,7 +1,7 @@
 ---
 title:  "Rails Hosting"
 date:   2015-09-06
-summary: ""
+summary: "I've been hunting for the perfect Rails host for sites that I've built for two friends. One owns a small business, and the other needed a personal website for his music.  Cost is a big factor, but speed, reliability and security are important, too.  I've researched several options - Heroku, WebFaction, Digital Ocean, and OpenShift.  Each has different pros and cons, but after trying all of them, I think Heroku is still the best solution for smaller businesses and individuals..."
 tags: 
   - Rails
   - Hosting

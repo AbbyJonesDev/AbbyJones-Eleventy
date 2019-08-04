@@ -1,7 +1,7 @@
 ---
 title:  "Starting a New Website"
 date:   2016-02-01
-summary: "An overview of different ways small business owners and nonprofit groups can get started with creating a website."
+summary: "In today's world, we expect businesses and organizations to have a website - even small businesses. Small business owners may feel overwhelmed and not know where to begin this process, especially early on when they're focused on building the business from the ground up and trying to keep costs low..."
 tags: 
   - ''
 ---

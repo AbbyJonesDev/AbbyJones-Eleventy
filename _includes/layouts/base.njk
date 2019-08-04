@@ -13,7 +13,11 @@
     <div class="wrapper">
       <header>
         <div class="internal-content">
-          <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+          <h1 class="home">
+            <a href="{{ '/' | url }}">
+              {{ metadata.title }}
+            </a>
+          </h1>
           <ul class="nav">
             <li class="nav-item{% if page.url.match("posts") %} nav-item-active{% endif %}"><a href="/posts">
               Posts
@@ -60,7 +64,7 @@
             </li>
             <li class="social-media-item">
               <a href="mailto:abbyjonesdev@gmail.com">
-                <ion-icon name="mail"></ion-icon>Email: abbyjonesdev@gmail.com
+                <ion-icon name="mail"></ion-icon>Email
               </a>
             </li>
           </ul>

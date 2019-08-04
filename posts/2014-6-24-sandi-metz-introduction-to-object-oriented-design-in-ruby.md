@@ -1,6 +1,6 @@
 ---
 title:  "Object-Oriented Design in Ruby"
-summary: "Sandi Metz' book Practical Object-Oriented Design in Ruby helps level-up Ruby skills and overall knowledge of good software design principles."
+summary: "Ruby is a beautiful programming language and a fantastic language for beginners.  It's clear, simple syntax makes it accessible, and it's amazing how much you can get done in a few short, simple lines of code.  Combine Ruby with the Rails framework, and newcomers can hit the ground running fast.  This speed is both a wonderful and a terrible thing..."
 date:   2014-07-05
 tags: 
   - Ruby

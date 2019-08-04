@@ -1,7 +1,7 @@
 ---
 title:  "My First Angular App"
 date:   2016-02-02
-summary: ""
+summary: "One of the Intermediate Front End Development projects for FreeCodeCamp is to build a Local Weather App, a single page app that uses geolocation and a weather API to show the current weather in a user's location. They recommend using the Open Weather API. Requirements include providing a button that toggles units between Celsius and Fahrenheit and setting a different icon or background image based on weather conditions..."
 tags: 
    - JavaScript
    - AngularJS

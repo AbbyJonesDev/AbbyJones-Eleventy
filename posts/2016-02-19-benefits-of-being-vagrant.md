@@ -1,7 +1,7 @@
 ---
 title:  "Benefits of Being Vagrant"
 date:   2016-02-19
-summary: ""
+summary: "I had used Vagrant a little bit before, and this felt like the perfect opportunity to make it a regular part of my development workflow.  Vagrant is a great tool that works with VirtualBox or VMWare to set up and manage virtual environments. I really like the idea of keeping my machine as clean and light as possible and having each project compartmentalized in its own environment.  It should also help to build apps in a dev environment that closely matches the production environment..."
 tags:  
   - Vagrant
   - Virtual Machines

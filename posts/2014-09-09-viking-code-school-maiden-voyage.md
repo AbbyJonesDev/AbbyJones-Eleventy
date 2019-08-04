@@ -1,6 +1,6 @@
 ---
 title:  "Viking Code School: The Maiden Voyage Begins"
-summary: "Description of the first week of Viking Code School - an online coding bootcamp"
+summary: "This week marks the beginning of an exciting new adventure - the maiden voyage of the Viking Code School.  I had a fantastic experience as a TA with Omaha Code School last spring, and I'm excited to play that role again with a new group of students in a whole new format..."
 date:   2014-09-09
 tags: 
   - Teaching

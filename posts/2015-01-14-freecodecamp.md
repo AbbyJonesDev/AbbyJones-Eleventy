@@ -1,7 +1,7 @@
 ---
 title:  "FreeCodeCamp"
 date:   2015-01-14
-summary: ""
+summary: "It's hard to stay focused when there are so many awesome out there to learn. I want to get into Wordpress and build mobile apps for iOS and Android. Swift is especially intriguing... I spent a little time exploring Objective C in a CodeSchool course last year, but I've heard that Swift takes its cues from languages like Python and Ruby that have a simpler and more readable syntax..."
 tags: 
   - Learning to Code
   - JavaScript

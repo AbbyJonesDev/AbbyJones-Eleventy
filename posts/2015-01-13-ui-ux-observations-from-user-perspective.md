@@ -1,7 +1,7 @@
 ---
 title:  "UI/UX Observations from a User Perspective"
 date:   2015-01-13
-summary: ""
+summary: "After a couple of rather frustrating experiences today, I wrote down some things I want to keep in mind whenever I'm working on a site. Nothing new or earth shattering, but these are some reminders to myself as a developer, from myself as a user..."
 tags: 
   - UI
   - UX

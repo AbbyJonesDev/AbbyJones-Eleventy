@@ -3,9 +3,27 @@ layout: layouts/home.njk
 navtitle: Home
 ---
 
-<h1>Latest 3 Posts</h1>
+<div class="home-container">
+  <div class="home-column">
+    <h1>Latest Posts</h1>
 
-{% set postslist = collections.posts | head(-3) %}
-{% include "postslist.njk" %}
+    {% set postslist = collections.posts | head(-3) %}
+    {% include "postslist.njk" %}
 
-<p>More posts can be found <a href="{{ '/posts/' | url }}">here</a>.</p>
+    <p>More posts can be found <a href="{{ '/posts/' | url }}">here</a>.</p>
+  </div>
+
+
+  <div class="home-column">
+    <a class="twitter-timeline" data-height="800" href="https://twitter.com/AbbyJones80?ref_src=twsrc%5Etfw">Tweets by AbbyJones80</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+

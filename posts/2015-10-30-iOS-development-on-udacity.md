@@ -1,7 +1,7 @@
 ---
 title:  "iOS Development on Udacity - Week One"
 date:   2015-10-30
-summary: ""
+summary: "I started Udacity's Intro to iOS Development with Swift course this past weekend. I can't believe how much I've learned in just a few days. Our last assignment for Lesson 3 is to write a blog post about what we've learned so far.  It would take way too long to write it all up, but here are some of the cool things I learned about XCode..."
 tags: 
   - iOS
   - Xcode

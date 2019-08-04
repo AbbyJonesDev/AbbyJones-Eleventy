@@ -1,7 +1,7 @@
 ---
 title:  "Remote Pair Programming Benefits and Tips"
 date:   2015-01-15
-summary: ""
+summary: "My first experience with remote pair programming was in Berkeley's Engineering Software as a Service class on EdX.org. The prospect of a video conference, sharing my screen, and trying to code with a total stranger was intimidating to say the least. It turned out to be a fantastic experience, though. I met great people and learned way more than I could have on my own..."
 tags: 
   - Remote
   - Pair Programming

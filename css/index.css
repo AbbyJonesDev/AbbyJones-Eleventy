@@ -252,7 +252,6 @@ footer {
 
 .nav-item-active {
   font-weight: 700;
-  text-decoration: underline;
 }
 
 footer ion-icon {
@@ -260,9 +259,57 @@ footer ion-icon {
   margin-right: .5rem;
 }
 
+/* ==================================== */
+/*  - HOME PAGE                         */
+/* ==================================== */
+
+@media screen and (max-width: 399px) {
+  .home-column:first-child {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 2rem;
+  }
+}
 
 /* ==================================== */
-/* 5 - POSTS LIST                       */
+/* 5a - POSTS CARDS                      */
+/* ==================================== */
+
+.post-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* grid-gap: 1rem; */
+}
+
+.post-card {
+  width: 350px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--purple-dark);
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 400px) {
+  .post-card {
+    width: 400px;
+  }
+}
+
+.post-card-summary {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--purple-dark);
+}
+
+/* ==================================== */
+/* 5b - POSTS LISTS..                   */
 /* ==================================== */
 .postlist,
 .talklist,

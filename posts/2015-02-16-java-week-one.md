@@ -1,7 +1,7 @@
 ---
 title:  "Java Week One"
 date:   2015-02-16
-summary: ""
+summary: "It's been exactly one week since Head First Java and Core Java arrived on my doorstep. I finished reading through chapter 5 of Head First Java last night, and this morning I typed up the code for the SimpleDotComGame, compiled it, and played a quick game against the computer..."
 tags:
   - Learning to Code
   - Java

@@ -1,7 +1,7 @@
 ---
 title:  "Developing the Hometown Tourist"
 date:   2016-03-08
-summary: ""
+summary: "I loved writing the Hometown Tourist, and it got great feedback from site visitors and community members. Though I haven't written an article for several years, the website continues to get a good number of monthly page views. I've wanted to get back to it for a long time....."
 tags: 
   - AngularJS
   - Rails

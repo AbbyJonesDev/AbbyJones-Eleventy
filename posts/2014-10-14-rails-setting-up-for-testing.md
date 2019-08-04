@@ -1,7 +1,7 @@
 ---
 title:  "Rails: Setting Up for Testing"
 date:   2014-10-14
-summary: "Setting up a Rails project with RSpec and other dependencies for testing"
+summary: "As I started work on a new Rails project recently, one of my first priorities was to set up my test environment and tools so I could use test driven development (TDD) from the beginning. Here are the steps I took, some snags I ran into, and some things I learned along the way..."
 tags: 
   - Ruby 
   - Rails 

@@ -1,7 +1,7 @@
 ---
 title:  "Cross Browser Date Picker"
 date:   2015-02-25
-summary: ""
+summary: "This week I learned that Safari and Firefox handle date fields differently than Chrome. Chrome provides a really nice, native date picker, and it ensures that entries conform to the correct pattern. Safari and Firefox don't support date fields and treat them as regular text fields instead..."
 tags: 
   - JavaScript
   - Rails

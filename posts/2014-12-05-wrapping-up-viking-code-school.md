@@ -1,6 +1,7 @@
 ---
 title:  "Wrapping Up Viking Code School"
 date:   2014-12-05
+summary: "The first cohort of Viking Code School officially wrapped up last week.  It was a great adventure.  I got to help some amazing students experience an amazing amount of growth in 3 months.  I also got to build some tests for the VCS website..."
 tags: 
   - Teaching
   - Ruby

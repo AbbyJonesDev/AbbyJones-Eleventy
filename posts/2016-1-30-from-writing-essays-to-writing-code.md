@@ -1,7 +1,7 @@
 ---
 title:  "From Writing Essays to Writing Code"
 date:   2016-01-30
-summary: ""
+summary: "As a student at Dana College, I graduated with majors in English Secondary Education and History. I was able to meet my math and science requirements through my ACT scores and AP credit, so I didn't take a single math or science class during my undergraduate years. I did take a statistics class for my master's degree, but even that was geared toward education majors and involved more general concepts rather than specific math application..."
 tags: 
   - Learning to Code
 ---
