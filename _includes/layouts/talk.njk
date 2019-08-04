@@ -3,7 +3,14 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
+<div class="post-date">
+  <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+</div>
 
 {{ content | safe }}
 
-<p><a href="{{ '/talks' | url }}">← Talks</a></p>
+<p class="back-to-posts">
+  <a href="{{ '/talks' | url }}">
+    Back to Talks
+  </a>
+</p>
