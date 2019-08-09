@@ -18,7 +18,11 @@ renderData:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
-<h1>Tagged "{{ tag }}"</h1>
+{% if tag != '' %}
+  <h1>Tagged "{{ tag }}"</h1>
+{% else %}
+  <h1>All Tags</h1>
+{% endif %}
 
 {# This actually gets all types of things....posts, talks, resources... #}
 {% set postslist = collections[ tag ] %}
