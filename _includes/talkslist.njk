@@ -1,14 +1,34 @@
-<ol reversed class="talklist" style="counter-reset: start-from {{ talkslist.length + 1 }}">
-{% for talk in talkslist | reverse %}
-  <li class="talklist-item{% if talk.url == url %} talklist-item-active{% endif %}">
-    <a href="{{ talk.url | url }}" class="talklist-link">{% if talk.data.title %}{{ talk.data.title }}{% else %}<code>{{ talk.url }}</code>{% endif %}</a>
-    <time class="talklist-date" datetime="{{ talk.date | htmlDateString }}">{{ talk.date | readableDate }}</time>
-    {% for tag in talk.data.tags %}
-      {%- if tag != "talks" -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-  </li>
-{% endfor %}
-</ol>
+<div class="post-card-container">
+  {% for talk in talkslist | reverse %}
+    <div class="post-card">
+      <img src="{{ talk.data.coverImage }}" alt="Cover image for talk" class="talk-cover-image" />
+      <div class="post-card-title">
+        <a href="{{ talk.url | url }}" class="postlist-link">
+          {% if talk.data.title %}
+            {{ talk.data.title }}
+          {% else %}
+            <code>
+              {{ talk.url }}
+            </code>
+          {% endif %}
+        </a>
+      </div>
+      <div class="post-card-date">
+        <time class="postlist-date" datetime="{{ talk.date | htmlDateString }}">{{ talk.date | readableDate }}</time>
+      </div>
+      <div class="post-card-summary">
+        {{ talk.data.summary }}
+      </div>
+      <div class="post-card-tags">
+        {% for tag in talk.data.tags %}
+          {%- if tag != "talks" -%}
+            {%- if tag != "" -%}
+              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+            {%- endif -%}
+          {%- endif -%}
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

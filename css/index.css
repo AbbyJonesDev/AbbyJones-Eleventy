@@ -428,3 +428,12 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: var(--purple);
 }
+
+/* ==================================== */
+/* 8 - TALKS                            */
+/* ==================================== */
+
+
+.talk-cover-image {
+  max-width: 100%;
+}
