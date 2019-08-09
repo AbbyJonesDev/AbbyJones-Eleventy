@@ -263,16 +263,14 @@ footer ion-icon {
 /*  - HOME PAGE                         */
 /* ==================================== */
 
-@media screen and (max-width: 399px) {
-  .home-column:first-child {
-    margin-bottom: 2rem;
-  }
+.home-column {
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 400px) {
   .home-container {
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: auto;
     grid-column-gap: 2rem;
   }
 }
@@ -285,7 +283,6 @@ footer ion-icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* grid-gap: 1rem; */
 }
 
 .post-card {
