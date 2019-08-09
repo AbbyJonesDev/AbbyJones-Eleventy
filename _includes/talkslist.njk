@@ -1,7 +1,9 @@
 <div class="post-card-container">
   {% for talk in talkslist | reverse %}
     <div class="post-card">
-      <img src="{{ talk.data.coverImage }}" alt="Cover image for talk" class="talk-cover-image" />
+      {%- if talk.data.coverImage -%}
+        <img src="{{ talk.data.coverImage }}" alt="Cover image for talk" class="talk-cover-image" />
+      {% endif %}
       <div class="post-card-title">
         <a href="{{ talk.url | url }}" class="postlist-link">
           {% if talk.data.title %}
