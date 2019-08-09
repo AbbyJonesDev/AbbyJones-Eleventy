@@ -1,36 +1,38 @@
 <div class="post-card-container">
   {% for post in postslist | reverse %}
-    <div class="post-card">
-      {%- if post.data.coverImage -%}
-        <img src="{{ post.data.coverImage }}" alt="Cover image for resource" class="talk-cover-image" />
-      {% endif %}
-      <div class="post-card-title">
-        <a href="{{ post.url | url }}" class="postlist-link">
-          {% if post.data.title %}
-            {{ post.data.title }}
-          {% else %}
-            <code>
-              {{ post.url }}
-            </code>
-          {% endif %}
-        </a>
-      </div>
-      <div class="post-card-date">
-        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      </div>
-      <div class="post-card-summary">
-        {{ post.data.summary }}
-      </div>
-      <div class="post-card-tags">
-        {% for tag in post.data.tags %}
-          {%- if tag != "posts" -%}
-            {%- if tag != "" -%}
-              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-              <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+    {% if post.url != '/tags/' %}
+      <div class="post-card">
+        {%- if post.data.coverImage -%}
+          <img src="{{ post.data.coverImage }}" alt="Cover image for resource" class="talk-cover-image" />
+        {% endif %}
+        <div class="post-card-title">
+          <a href="{{ post.url | url }}" class="postlist-link">
+            {% if post.data.title %}
+              {{ post.data.title }}
+            {% else %}
+              <code>
+                {{ post.url }}
+              </code>
+            {% endif %}
+          </a>
+        </div>
+        <div class="post-card-date">
+          <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        </div>
+        <div class="post-card-summary">
+          {{ post.data.summary }}
+        </div>
+        <div class="post-card-tags">
+          {% for tag in post.data.tags %}
+            {%- if tag != "posts" -%}
+              {%- if tag != "" -%}
+                {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+              {%- endif -%}
             {%- endif -%}
-          {%- endif -%}
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
-    </div>
+    {% endif %}
   {% endfor %}
 </div>

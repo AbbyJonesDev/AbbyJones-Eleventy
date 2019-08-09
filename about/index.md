@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 title: About
 templateClass: tmpl-post
+eleventyExcludeFromCollections: true
 ---
 
 ## Professionally
