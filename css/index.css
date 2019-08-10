@@ -18,6 +18,11 @@
 
   --footer-height: 4rem;
   --footer-spacing: 5rem;   /* footer height + 1 rem of padding */
+
+  --border-radius: 8px;
+
+  --phone-width: 400px;
+  --tablet-width: 800px;
 }
 
 /* ==================================== */
@@ -286,18 +291,19 @@ footer ion-icon {
 }
 
 .post-card {
-  width: 350px;
+  /* width: 350px; */
+  width: 400px;
   margin-bottom: 1rem;
   padding: 1rem;
   border: 4px solid var(--purple-dark);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 
-@media screen and (min-width: 400px) {
+/* @media screen and (max--width: var(--phone-width)) {
   .post-card {
     width: 400px;
   }
-}
+} */
 
 .post-card-summary {
   margin-top: 1rem;
@@ -319,7 +325,7 @@ footer ion-icon {
   padding: .5rem;
   font-weight: 500;
   border: 2px solid var(--teal-dark);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   text-decoration: none;
 }
 
@@ -436,4 +442,28 @@ a[href].direct-link:focus:visited,
 
 .talk-cover-image {
   max-width: 100%;
+}
+
+/* ==================================== */
+/* 9 - ABOUT                            */
+/* ==================================== */
+
+.bio-pic {
+  max-width: 100%;
+  float: left;
+  border: 2px outset var(--teal-dark);
+  border-radius: var(--border-radius);
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 400px) {
+  .bio-pic {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .bio-pic {
+    max-width: 25%;
+  }
 }
