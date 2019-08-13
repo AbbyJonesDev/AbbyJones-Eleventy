@@ -7,5 +7,89 @@ eleventyExcludeFromCollections: true
 
 <h1>Resources</h1>
 
+<section>
+  <h2>Learning to Code</h2>
+
+  <h3>Online Courses</h3>
+  <ul>
+    <li>
+      <a href="https://www.freecodecamp.com" target="__blank">
+        FreeCodeCamp
+      </a>
+      - Free curriculum for learning full-stack development with HTML, CSS, and JavaScript with an active online community
+    </li>
+    <li>
+      <a href="https://www.edX.org" target="__blank">
+        EdX.org
+      </a>
+      - Free courses from top universities including MIT and Harvard
+    </li>
+  </ul>
+
+  <h3>Books</h3>
+  <ul>
+    <li>
+      <a href="https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/ref=sr_1_1 target="__blank">
+        HTML and CSS: Design and Build Websites
+      </a>
+      - Jon Duckett
+    </li>
+    <li>
+      <a href="https://abookapart.com/products/responsive-web-design" target="__blank">
+        Responsive Web Design
+      </a>
+      - Ethan Marcotte
+    </li>
+    <li>
+      <a href="https://abookapart.com/products/responsible-responsive-design" target="__blank">
+        Responsible Responsive Web Design
+      </a>
+      - Scott Jehl
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Coding Tools</h2>
+  <dl>
+    <dt>
+      <a href="https://codesandbox.io" target="__blank">
+        CodeSandbox
+      </a>
+    </dt>
+    <dd>
+      Holy wow - incorporates with all the tools.  (GitHub, Jest, Prettier, ESLint….)  Has a “Live” mode for collaboration.  Upload files with limit of 20mb for free accounts.  All uploaded files are public.  Secrets can be saved as environment variables.  Free account allows up to 50 sandboxes and 15 server sandboxes. Becoming a “Patron” for any monthly amount enables private sandboxes, connecting to private GitHub repos, unlimited client sandboxes, 50 server sandboxes, and 500mb of uploaded files.
+    </dd>
+
+    <dt>
+      <a href="https://stackblitz.com" target="__blank">
+        StackBlitz
+      </a>
+    </dt>
+    <dd>
+      Looks very promising for coding and even deploying an app from a web browser.  Currently supports React and Angular.  Support for Vue and Ionic coming.  Syncs with GitHub.  Free option provides unlimited public projects but no deploys.  “Astronaut” option is $9/month and includes unlimited private projects and one deployed app.  Related to Firebase/GCP.
+    </dd>
+
+    <dt>
+      <a href="https://repl.it" target="__blank">
+        Repl.it
+      </a>
+    </dt>
+    <dd>
+      Online IDE with “Multiplayer” for collaboration.  Supports a ton of languages.  Has a robust free option or a $7/month Hacker option that adds private projects
+    </dd>
+
+    <dt>
+      <a href="https://www.codepen.io" target="__blank">
+        CodePen
+      </a>
+    </dt>
+    <dd>
+      Why CodePen is awesome....because it is, ok....
+    </dd>
+  </dl>
+
+</section>
+
 {% set resourceslist = collections.resources %}
 {% include "resourceslist.njk" %}
