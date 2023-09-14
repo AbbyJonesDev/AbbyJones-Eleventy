@@ -6,20 +6,13 @@ eleventyExcludeFromCollections: true
 
 <div class="home-container">
   <div class="home-column">
-    <h2>Latest Posts</h2>
+    <h2>Posts</h2>
 
     {% set postslist = collections.posts | head(-4) %}
     {% include "postslist.njk" %}
 
     <p>More posts can be found <a href="{{ '/posts/' | url }}">here</a>.</p>
   </div>
-
-
-  <div class="home-column">
-    <h2>Latest Tweets</h2>
-    <a class="twitter-timeline" data-height="600" href="https://twitter.com/AbbyJones80?ref_src=twsrc%5Etfw">Tweets by AbbyJones80</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-
 </div>
 
 
