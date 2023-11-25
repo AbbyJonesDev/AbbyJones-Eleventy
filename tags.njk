@@ -16,7 +16,7 @@ pagination:
 layout: layouts/home.njk
 renderData:
   title: Tagged “{{ tag }}”
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slugify }}/
 ---
 {% if tag != '' %}
   <h1>Tagged "{{ tag }}"</h1>
@@ -29,5 +29,5 @@ permalink: /tags/{{ tag }}/
 {% include "postslist.njk" %}
 
 {% if page.url != '/tags/' %}
-  <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+  <p>See <a href="{{ '/tag-list/' | url }}">all tags</a>.</p>
 {% endif %}

@@ -415,6 +415,19 @@ a[href].tag:visited {
   background-color: var(--purple);
 }
 
+.tag-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 1rem 1rem;
+  align-items: center;
+}
+
+.tag-list .tag {
+  padding: .5rem;
+  text-align: center;
+}
+
 /* ==================================== */
 /* 7 - DIRECT LINKS / MD HEADERS        */
 /* ==================================== */
