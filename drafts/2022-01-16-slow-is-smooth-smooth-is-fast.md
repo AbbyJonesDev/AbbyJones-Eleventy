@@ -5,6 +5,8 @@ summary: "What if the fastest way to accomplish a goal is to slow down?"
 tags: 
   - Learning
   - Dogs
+eleventyExcludeFromCollections: true
+permalink: false
 ---
 
 In March of 2020, I finally did something I've wanted to do for as long as I can remember.

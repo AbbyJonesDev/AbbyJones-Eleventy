@@ -5,6 +5,8 @@ summary: ""
 tags: 
   - Elixir
   - "Functional Programming"
+eleventyExcludeFromCollections: true
+permalink: false
 ---
 
 This year has been another year full of learning 
